@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: paged-x;
+}
+
+.container-fluid {
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-bottom: 2rem;
+    min-height: 34rem;
+    height: auto;
+}
+
+.inputBox {
+    background-color: #ffffff;
+    height: 5rem;
+}
+
+#input {
+    border: none;
+    font-weight: bold;
+}
+
+#input:focus {
+    outline: none !important;
+
+}
+
+#btn {
+    background-color: #0d6efd;
+    height: 2.5rem;
+    color: white;
+
+}
+
+li {
+    margin: 0.8rem;
+    display: block;
+    height: 5rem;
+    width: auto;
+    cursor: pointer;
+    position: relative;
+    padding: 1.5rem 5rem;
+    list-style-type: none;
+    font-size: 18px;
+    transition: 0.2s;
+
+}
+
+i {
+    font-family: Arial;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.pup {
+    background-color: aliceblue;
+    text-align: center;
+    margin: 0 auto;
+    width: 20%;
+    border-radius: .4rem;
+}
+
+.pup h2 {
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.pup button {
+    margin: 1rem .3rem;
+    color: rgb(246, 246, 246);
+    border: none;
+    border-radius: .3rem;
+    height: 2.5rem;
+    width: 25%;
+}
+
+.yes-btm {
+    background-color: crimson;
+    font-size: 1rem;
+    font-weight:lighter;
+}
+
+.no-btm {
+    background-color: rgb(0, 119, 255);
+    font-size: 1rem;
+    font-weight:lighter;
+}
+
+.btm-box {
+    text-align: right;
+    margin-right: 3rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: all .2s ease;
+}
+
+#Warning {
+    top: 5rem;
+    position: absolute;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    background-color: #e61a2e;
+    border-radius: 0 0 0.5rem 0.5rem ;
+    display: none;
+}

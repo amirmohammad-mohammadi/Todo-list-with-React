@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <title>Title</title>
+</head>
+<body onload="load()">
+
+<div id="wrap" class="wrapper">
+    <div class="pup">
+        <h2>Are you sure?</h2>
+        <hr>
+        <div class="btm-box">
+            <button class="yes-btm" onclick="yes()">YES</button>
+            <button class="no-btm" onclick="no()">NO</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid w-auto">
+    <div class="row header">
+        <p class="col-4 offset-5 my-5 fs-2  fas fa-check-square"><a>My Todo-s</a></p>
+    </div>
+    <div class="row justify-content-between m-5  rounded-3 inputBox position-relative">
+        <input class="col-9  my-4 mx-0  fs-5 " id="input" placeholder="Add new ...">
+        <button class="col-1  my-4  mx-5 fw-bold link-primary border-0 rounded-3" onclick="crateLi()" id="btn"> ADD
+        </button>
+        <div id="Warning">You have to write something</div>
+        <div class="col-12 line "></div>
+    </div>
+
+
+    <ul id="myUl"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
